@@ -93,15 +93,8 @@ BOXING_AI_WS/
 ### 1. Segment your raw videos
 
 1. Open `time_stamps/Boxing_Videos_Timestamp.xlsx`
-2. Label start/end times for each move in one video (for now).
-3. Run:
-
-   ```bash
-   python training.py
-   ```
-
-   or execute cells in `data_processing.ipynb`.
-
+2. Label start/end times for each move in one video (Maybe in the future can explore how 1 video of repeating the same moves affects model performance).
+3. Execute cells in `data_processing.ipynb`.
 4. Check `dataset/<label>/*.mp4` for your cut clips.
 
 ### 2. Extract poses
@@ -113,7 +106,7 @@ BOXING_AI_WS/
 # then run the cell to populate dataset_with_poses/
 ```
 
-- VM: `dataset_with_poses_visualization/` will contain a few annotated MP4s.
+- `dataset_with_poses_visualization/` will contain a few annotated MP4s.
 
 ### 3. Train your LSTM model
 
